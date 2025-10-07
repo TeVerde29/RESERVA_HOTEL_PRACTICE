@@ -51,11 +51,17 @@
                 <!-- type="password" => oculta los caracteres en pantalla (pero no cifra nada en la red) -->
             </div>
 
-            <div class="col-4 d-grid">
+            <div class="col-12 d-grid">
             <!-- d-grid => hace que el botón se estire al 100% del ancho de la columna -->
                 <button type="submit" class="btn btn-primary">Ingresar</button>
                 <!-- type="submit" => indica que el botón envía el formulario -->
             </div>
+
+            <div class="col-12">
+                <p class="text-center">¿No tienes una cuenta? <a th:href="@{/registro}">Regístrate</a></p>
+                <!-- th:href => enlace a la página de registro (ruta relativa al contexto de la aplicación) -->
+            </div>
+
         </form>
     </div>
 </body>
